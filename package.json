@@ -1,15 +1,15 @@
 {
   "name": "foodapp",
   "version": "1.0.0",
-  "homepage": "https://thienbui1801.github.io/footapp/",
+  "homepage": "https://thienbui1801.github.io/food/",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss --postcss -i ./src/style.css -o ./public/style.css",
     "watch": "npx tailwindcss --postcss  -i ./src/style.css -o ./public/style.css --watch",
-    "build": "NODE_ENV=production npx tailwindcss --postcss -i ./src/style.css -o ./public/style.css",
+    "build": "set NODE_ENV=production& npx tailwindcss --postcss -i ./src/style.css -o ./public/style.css",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
@@ -21,9 +21,9 @@
   "bugs": {
     "url": "https://github.com/ThienBui1801/foodapp/issues"
   },
-  "homepage": "https://github.com/ThienBui1801/foodapp#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
+    "cross-env": "^7.0.3",
     "gh-pages": "^3.2.3",
     "postcss": "^8.4.8",
     "tailwindcss": "^3.0.23"

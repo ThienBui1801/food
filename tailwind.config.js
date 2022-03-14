@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        body: ['Roboto']
+      },
       height: {
         custom: "620px",
       },
