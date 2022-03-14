@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container mx-auto px-4">
+      <nav class="flex justify-between items-center my-2">
+        <!-- Logo -->
+        <div class="w-32 md:w-full z-20">
+          <img src="./img/logo.png" alt="Menu Logo" />
+        </div>
+
+        <!-- Navbar list -->
+        <ul id="menu" class="invisible md:visible nav-list fixed z-10">
+          <li class="m-6 md:m-0">
+            <a href="#" class="nav-items">Home</a>
+          </li>
+          <li class="m-6 md:m-0">
+            <a href="#" class="nav-items">Product</a>
+          </li>
+          <li class="m-6 md:m-0">
+            <a href="#" class="nav-items">FAQ</a>
+          </li>
+          <li class="m-6 md:m-0">
+            <a href="#" class="nav-items">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Menu button -->
+        <div id="btn-menu" class="md:invisible visible z-20">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section>
+    <div style="background-image: url(./img/banner.png)"
+      class="w-screen lg:w-full h-custom bg-no-repeat bg-cover relative">
+      <div class="text-center w-full lg:w-auto absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <p class="text-white text-xl font-bold">Food app</p>
+        <h1 class="text-white text-2xl md:text-5xl leading-relaxed font-extrabold capitalize">Why stay hungry when you can order
+          form Bella Onojie</h1>
+        <p class="text-white md:text-xl py-4">Download the bella onoje’s food app now on</p>
+
+        <!-- Button -->
+        <div class="flex justify-center items-center my-10">
+          <button class="btn-play">Playstore</button>
+          <button class="btn-app">App Store</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food App -->
+  <section class="relative">
+    <div class="container">
+      <div class="absolute top-1/2 left-1/2 transform -translate-x-2/3 -translate-y-1/4">
+        <img src="./img/app-img.png" alt="App Image" class="max-w-none w-screen h-custom pl-20 md:w-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="pt-96 mt-16">
+    <div class="container mx-auto px-4">
+      <hr class="w-3/5 h-0.5 mx-auto bg-gray-400" />
+
+      <h1 class="py-14 text-center text-green-600 font-bold text-4xl capitalize">How the app works</h1>
+
+      <div class="app-content">
+        <div class="text-center mb-10">
+          <img src="./img/app-1.png" alt="FoodApp">
+        </div>
+        <div class="text-center md:text-left">
+          <p class="text-orange-600 font-extrabold text-xl">Create an account</p>
+          <h2 class="app-title">Create/login to an existing account to get started</h2>
+          <p class="app-desc">An account is created with your email and a desired password</p>
+        </div>
+      </div>
+
+      <div class="app-content md:flex-row-reverse">
+        <div class="text-center mb-10">
+          <img src="./img/app-2.png" alt="FoodApp">
+        </div>
+        <div class="text-center md:text-left">
+          <p class="text-orange-600 font-extrabold text-xl">Explore varieties</p>
+          <h2 class="app-title">Shop for your favorites meal as e dey hot.</h2>
+          <p class="app-desc">Shop for your favorites meals or drinks and enjoy while doing it.</p>
+        </div>
+      </div>
+
+      <div class="app-content">
+        <div class="text-center mb-10">
+          <img src="./img/app-3.png" alt="FoodApp">
+        </div>
+        <div class="text-center md:text-left">
+          <p class="text-orange-600 font-extrabold text-xl">Checkout</p>
+          <h2 class="app-title">When you done checkout and get it delivered</h2>
+          <p class="app-desc">When you done check out and get it delivered with case.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section>
+    <div class="relative bg-cover bg-no-repeat w-screen lg:w-full h-custom"
+      style="background-image: url(./img/download.png);">
+      <div class="absolute left-1/2 top-1/2 text-center transform -translate-x-1/2 -translate-y-1/2 w-full">
+        <h1 class="text-white text-2xl md:text-5xl leading-relaxed font-extrabold capitalize">Dowload the app now.</h1>
+        <p class="py-6 text-white text-xl font-bold">Available on your favorite store. Start your premium experience
+          now</p>
+
+        <!-- Button -->
+        <div class="flex justify-center items-center my-10">
+          <button class="btn-play">Playstore</button>
+          <button class="btn-app">App Store</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container mx-auto">
+      <div class="py-4">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <div>
+            <a href="#">
+              <img src="./img/logo.png" alt="Footer Logo">
+            </a>
+          </div>
+
+          <!-- Contact -->
+          <ul>
+            <li>
+              <a class="flex mx-4 my-2" href="telto: 0123456789">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-400 mr-4" viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg>
+                0123 456 789
+              </a>
+            </li>
+            <li>
+              <a class="flex mx-4 my-2" href="mailto:info@mail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-400 mr-4" viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                info@mail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center">
+          <p class="text-gray-400 font-medium text-xs py-2">Copyright 2020 Bella Onojie.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
